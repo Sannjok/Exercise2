@@ -1,0 +1,163 @@
+body{
+background:linear-gradient(to left,blue, white);
+min-width: 800px;
+font-family: "segoe script"
+}
+header{
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+  background: linear-gradient(to left, blue, white);
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px black;
+  box-shadow: 40px 0px 95px 5px blue;
+  border-radius: 30px;
+}
+.logo{
+  border-left:1px solid blue;
+  border-right:1px solid blue;
+  color:white;
+  padding-top: 5px;
+  width: 200px;
+  height: 75px;
+  text-align: center;
+  font-family: monospace;
+  background:linear-gradient(to left, black, blue);
+  border-radius: 30px;
+  box-shadow: 0px 5px 20px 10px black;
+  text-shadow: 0 0 20px blue;
+  letter-spacing: 3px;
+  transform: rotate(5deg);
+  transform-origin: 0% 0%;
+}
+nav{
+  width: 100%;
+  height: inherit;
+}
+
+ul{
+  margin: 0;
+  height: inherit;
+}
+li{
+  border-top: none;
+  border-bottom: none;
+  border-left:10px solid blue;
+  border-radius: 40px;
+  color:white;
+  width: 100px;
+  display: inline-block;
+  float: right;
+  height: 55px;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 2px;
+  transition-property: border-color;
+  transition-duration: 1s;
+}
+li:hover{
+  height: 40px;
+  border-color: red;
+  border-left: none;
+  background:linear-gradient(to left, blue, black);
+  border-right:10px solid black;
+  border-top:2px solid black;
+  border-bottom: :1px solid black;
+  border-radius: 30px;
+  box-shadow: 0 40px 20px -20px black;
+  text-shadow: 0 0 15px black;
+  color:red;
+  transform: rotate(5deg);
+  transform-origin: 0% 0%;
+}
+/*Slider*/
+.slider_conteiner{
+  width: 800px;
+  height:360px;
+  margin: 0 auto;
+}
+.slider{
+  width: 800px;
+  height:300px;
+  position: relative;
+  box-shadow: 0 40px 20px -20px black;
+}
+.slide{
+  width: 800px;
+  height:300px;
+  position: absolute;
+  top: 0;
+}
+.controls{
+  width: 200px;
+  height:100px;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.botton{
+  width: 10px;
+  height: 10px;
+  border:1px double black;
+  border-radius: 50%;
+  margin-top: 340px;
+  background-color: white;
+  box-shadow: 0 0 5px black;
+}
+input{
+  display: none;
+}
+
+#slide1:checked~label[for="slide1"]>.slide{
+  background-image: url(img/1.jpg);
+}
+#slide2:checked~label[for="slide2"]>.slide{
+  background-image: url(img/2.jpg);
+}
+#slide3:checked~label[for="slide3"]>.slide{
+  background-image: url(img/3.jpg);
+}
+#slide4:checked~label[for="slide4"]>.slide{
+  background-image: url(img/4.jpg);
+}
+
+#slide1:checked~.controls label[for="slide1"]>.botton{
+  background-color: blue;
+  box-shadow: 0 0 10px blue;
+}
+#slide2:checked~.controls label[for="slide2"]>.botton{
+  background-color: blue;
+  box-shadow: 0 0 10px blue;
+}
+#slide3:checked~.controls label[for="slide3"]>.botton{
+  background-color: blue;
+  box-shadow: 0 0 10px blue;
+}
+#slide4:checked~.controls label[for="slide4"]>.botton{
+  background-color: blue;
+  box-shadow: 0 0 10px blue;
+}
+
+.main_text{
+  height: 80px;
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.content_conteiner{
+  width: 800px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.content{
+  width: 150px;
+  float: left;
+}
